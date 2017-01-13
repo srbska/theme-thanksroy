@@ -20,6 +20,10 @@ header {
     background-color: #555555;
 }
 
+h1 {
+    font-family: 'PT Sans', sans-serif;
+}
+
 @media (max-width:768px) {
         
     #wrap {
