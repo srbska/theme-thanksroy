@@ -28,11 +28,9 @@ h1 {
     color: #000;
 }
 
-@media screen {
-    body {
-        font-family: Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif;
-        font-size: 1.3em;
-    }
+body {
+    font-family: Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif;
+    font-size: 1.3em;
 }
 
 @media (max-width:768px) {
