@@ -43,6 +43,16 @@ h1 {
     min-height: 300px;
 }
 
+.record {
+    float: left;
+    width: 50%;
+}
+
+.item-img .image {
+    float: none;
+    height: 200px;
+}
+
 .pagination {
     clear: both;
 }
