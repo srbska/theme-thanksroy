@@ -43,6 +43,10 @@ h1 {
     min-height: 300px;
 }
 
+#sort-links + .item {
+    border-top: none;
+}
+
 .record {
     float: left;
     width: 50%;
