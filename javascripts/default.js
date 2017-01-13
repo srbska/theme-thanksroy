@@ -22,7 +22,7 @@ if (!ThanksRoy) {
     };
 
     $(function() {
-        $('.item.record').each(function(item) {
+        $('.item.record').each(function(index, item) {
             // make it half width of parent
             var $item = $(item);
             console.log($item.parent().width());
