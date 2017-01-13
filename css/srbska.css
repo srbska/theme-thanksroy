@@ -29,10 +29,10 @@ header {
     #primary-nav {
         margin-top: 0px !important;
         width: 100%;
-        margin-right: none;
+        margin-right: 0px;
     }
 
     #content {
-        padding-top: none !important;
+        padding-top: 0px !important;
     }
 }
