@@ -18,6 +18,10 @@ header {
     margin-right: 5.05263%;
 }
 
+#primary-nav a:hover {
+    font-weight: normal;
+}
+
 #primary section {
     column-count: 2;
     -moz-column-count: 2;
