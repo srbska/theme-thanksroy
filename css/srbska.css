@@ -71,6 +71,10 @@ h1 {
     max-width: 100%;
 }
 
+.item-img {
+    height: 170px;
+}
+
 .pagination {
     clear: both;
 }
