@@ -36,6 +36,17 @@ h1 {
     color: #000;
 }
 
+.browse .item {
+    border-top: none;
+    width: 200px;
+    float: left;
+    min-height: 300px;
+}
+
+.pagination {
+    clear: both;
+}
+
 @media (max-width:768px) {
         
     #wrap {
