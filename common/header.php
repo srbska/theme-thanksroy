@@ -92,6 +92,7 @@
     <!-- SRBSKA CSS Customisations -->
     <?php
     queue_css_url('/themes/theme-thanksroy/css/srbska.css');
+    echo head_css();
     ?>
 
     <!-- JavaScripts -->
