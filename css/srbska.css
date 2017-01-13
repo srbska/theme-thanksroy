@@ -49,7 +49,7 @@ h1 {
     clear: none;
 }
 
-.item-img, .image {
+.image {
     float: none;
     height: 250px;
 }
