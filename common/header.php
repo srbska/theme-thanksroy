@@ -73,8 +73,7 @@
         @media (max-width:768px) {
             
             #primary-nav {
-                margin-top: 0px;
-                background: red;
+                margin-top: 0px !important;
             }
             
             #primary-nav li {
