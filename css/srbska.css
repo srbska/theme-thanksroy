@@ -42,7 +42,7 @@ header {
 
 .collection {
     border-top-style: none;
-    padding-top: none;
+    padding-top: 0px;
 }
 
 h1 {
