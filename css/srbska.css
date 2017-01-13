@@ -22,6 +22,10 @@ header {
     font-weight: normal;
 }
 
+#primary-nav li.active a:hover {
+    font-weight: bold;
+}
+
 #primary section {
     column-count: 2;
     -moz-column-count: 2;
