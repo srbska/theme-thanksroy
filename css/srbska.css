@@ -1,3 +1,11 @@
-#site-title a:link, #site-title a:visited, #site-title a:active, #site-title a:hover {
-    color: red;
+header {
+    display: none;
+}
+
+#content {
+    padding-top: 100px;
+}
+
+#primary-nav {
+    padding-top: 100px;
 }

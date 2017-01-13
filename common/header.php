@@ -71,6 +71,11 @@
         }
 
         @media (max-width:768px) {
+            
+            #primary-nav {
+                padding-top: 0;
+            }
+            
             #primary-nav li {
                 background-color: <?php echo thanksroy_brighten($buttonColor, 40); ?>;
             }
