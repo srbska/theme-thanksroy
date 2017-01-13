@@ -21,13 +21,21 @@ if (!ThanksRoy) {
         });
     };
 
-    $(function() {
+    function resize() {
         $('.item.record').each(function(index, item) {
             // make it half width of parent
             var $item = $(item);
             var width = $item.parent().width() / 2;
             $item.find('a.image').height(width);
-        })
+        });
+    }
+
+    $(function() {
+        window.onresize = function() {
+            resize();
+        };
+
+        resize();
     });
 
 })(jQuery);
