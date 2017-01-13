@@ -25,7 +25,7 @@
     <?php
     queue_css_file(array('iconfonts','style'));
     queue_css_url('//fonts.googleapis.com/css?family=PT+Serif:400,700,400italic,700italic');
-    queue_css_url('/css/srbska.css');
+    queue_css_url('/themes/thanks-roy/css/srbska.css');
     echo head_css();
 
     echo theme_header_background();
