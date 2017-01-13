@@ -36,6 +36,10 @@ header {
     background-color: #555555;
 }
 
+#simple-pages-breadcrumbs {
+    display: none;
+}
+
 h1 {
     text-transform: uppercase;
     letter-spacing: .2em;
