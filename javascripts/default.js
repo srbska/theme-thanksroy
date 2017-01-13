@@ -28,7 +28,7 @@ if (!ThanksRoy) {
             var width = $item.parent().width() / 2;
             var $a = $item.find('a.image');
             var margins = parseInt($a.css('marginLeft')) + parseInt($a.css('marginRight'));
-            a.height(width - margins);
+            $a.height(width - margins);
         });
     }
 
