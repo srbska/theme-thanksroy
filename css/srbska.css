@@ -1,3 +1,3 @@
-#site-title a {
+#site-title a:link, #site-title a:visited, #site-title a:active, #site-title a:hover {
     color: red;
 }
