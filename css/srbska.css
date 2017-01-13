@@ -42,6 +42,7 @@ header {
 
 .collection {
     border-top-style: none;
+    padding-top: none;
 }
 
 h1 {
