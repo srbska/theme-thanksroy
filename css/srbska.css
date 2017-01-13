@@ -18,6 +18,12 @@ header {
     margin-right: 5.05263%;
 }
 
+#primary section {
+    column-count: 2;
+    -moz-column-count: 2;
+    -webkit-column-count: 2;
+}
+
 .menu-button {
     background-color: #555555;
 }
@@ -40,6 +46,12 @@ h1 {
         margin-top: 0px !important;
         width: 100%;
         margin-right: 0px;
+    }
+
+    #primary section {
+        column-count: 1;
+        -moz-column-count: 1;
+        -webkit-column-count: 1;
     }
 
     #content {
