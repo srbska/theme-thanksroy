@@ -48,6 +48,10 @@ h1 {
     color: #000;
 }
 
+.items-nav {
+    margin-top: 40px;
+}
+
 .browse .item {
     border-top: none;
     width: 200px;
