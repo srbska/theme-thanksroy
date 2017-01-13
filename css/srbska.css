@@ -33,6 +33,6 @@ header {
     }
 
     #content {
-        padding-top: none;
+        padding-top: none !important;
     }
 }
