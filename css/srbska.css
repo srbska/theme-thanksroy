@@ -54,6 +54,11 @@ h1 {
     height: 200px;
 }
 
+.item-img .image img {
+    max-height: 100%;
+    max-width: 100%;
+}
+
 .pagination {
     clear: both;
 }
