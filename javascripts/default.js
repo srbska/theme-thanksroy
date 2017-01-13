@@ -25,7 +25,8 @@ if (!ThanksRoy) {
         $('.item.record').each(function(index, item) {
             // make it half width of parent
             var $item = $(item);
-            console.log($item.parent().width());
+            var width = $item.parent().width() / 2;
+            $item.find('a.image').height(width);
         })
     });
 
