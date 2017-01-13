@@ -7,11 +7,13 @@ header {
 }
 
 #wrap {
-    border-top: 10px solid #555555;
+    border-top: 20px solid #555555;
 }
 
 #primary-nav {
     margin-top: 100px;
+    width: 22.21053%;
+    margin-right: 3.05263%;
 }
 
 .menu-button {
