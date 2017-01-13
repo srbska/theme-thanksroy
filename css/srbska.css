@@ -46,6 +46,7 @@ h1 {
 .record {
     float: left;
     width: 50%;
+    clear: none;
 }
 
 .item-img .image {
