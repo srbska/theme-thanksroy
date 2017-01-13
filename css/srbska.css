@@ -54,7 +54,12 @@ h1 {
 }
 
 .items-nav {
-    margin-top: 40px;
+    margin-top: 20px;
+}
+
+#sort-links ul {
+    margin-top: 0px;
+    padding-top: 0px;
 }
 
 .browse .item {
