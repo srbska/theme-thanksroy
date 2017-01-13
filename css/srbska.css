@@ -40,6 +40,14 @@ header {
     display: none;
 }
 
+body.browse.collections h1{
+    content: "Browse Collections"
+}
+
+body.browse.items h1{
+    content: "Browse Items"
+}
+
 h1 {
     text-transform: uppercase;
     letter-spacing: .2em;
