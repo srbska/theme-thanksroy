@@ -21,4 +21,10 @@ if (!ThanksRoy) {
         });
     };
 
+    $('.item.record').each(function(item) {
+        // make it half width of parent
+        var $item = $(item);
+        console.log($item.parent().width());
+    })
+
 })(jQuery);
