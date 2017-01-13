@@ -79,4 +79,8 @@ h1 {
     #content {
         padding-top: 0px !important;
     }
+
+    .record {
+        width: 100%;
+    }
 }
