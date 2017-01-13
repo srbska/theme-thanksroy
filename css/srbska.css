@@ -84,11 +84,15 @@ h1 {
 }
 
 .item.hentry h2 {
-    white-space: nowrap;
+    margin-right: 1.4em;
+    font-size: 1em;
     overflow: hidden;
     text-overflow: ellipsis;
-    margin-right: 1.2em;
-    font-size: 1em;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    line-height: 1.5;
+    max-height: 3em;
 }
 
 .pagination {
