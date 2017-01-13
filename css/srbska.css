@@ -4,6 +4,9 @@ header {
 
 #content {
     padding-top: 100px;
+}
+
+#wrap {
     border-top: 10px solid #555555;
 }
 
@@ -13,4 +16,15 @@ header {
 
 .menu-button {
     background-color: #555555;
+}
+
+@media (max-width:768px) {
+        
+    #wrap {
+        border-top: none !important;
+    }
+
+    #primary-nav {
+        margin-top: 0px !important;
+    }
 }
