@@ -26,7 +26,9 @@ if (!ThanksRoy) {
             // make it half width of parent
             var $item = $(item);
             var width = $item.parent().width() / 2;
-            $item.find('a.image').height(width);
+            var $a = $item.find('a.image');
+            var margins = parseInt($a.css('marginLeft')) + parseInt($a.css('marginRight'));
+            a.height(width - margins);
         });
     }
 
