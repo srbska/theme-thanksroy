@@ -116,6 +116,24 @@ h1 {
     clear: both;
 }
 
+/* 'show' page */
+
+body.item.show .element-set {
+    display: none;
+}
+
+#itemfiles {
+    display: none;
+}
+
+#item-citation {
+    display: none;
+}
+
+#item-output-formats {
+    display: none;
+}
+
 @media (max-width:768px) {
         
     #wrap {
