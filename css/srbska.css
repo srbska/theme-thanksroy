@@ -99,15 +99,15 @@ h1 {
     height: 250px;
 }
 
-.item {
+div.item {
     padding-right: 40px;
 }
 
-.item.wrap {
+div.item.wrap {
     /*padding-right: 0px;*/
 }
 
-.item .tags {
+div.item .tags {
     display: none;
 }
 
