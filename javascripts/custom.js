@@ -14,12 +14,13 @@
 
         if (totalItems < maxItemsPerRow) {
             maxItemsPerRow = totalItems;
+            maxItemWidth = Number.MAX_VALUE;
         }
 
         $items.each(function(index, item) {
             var $item = $(item);           
             var parentWidth = $item.parent().width();
-            var itemWidth = Math.floor(Math.min(maxItemWidth, parentWidth / maxItemsPerRow));
+            var itemWidth = itemWidth = Math.floor(Math.min(maxItemWidth, parentWidth / maxItemsPerRow));
 
             itemWidth -= $item.horizontalPadding();
 
