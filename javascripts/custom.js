@@ -24,6 +24,8 @@
             var parentWidth = $item.parent().width();
             var itemWidth = Math.floor(Math.min(maxItemWidth, parentWidth / maxItemsPerRow));
 
+            itemWidth -= $item.horizontalPadding();
+
             if (itemWidth < minItemWidth) {
                 itemWidth = maxItemWidth;
             }
