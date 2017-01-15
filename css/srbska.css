@@ -99,6 +99,10 @@ h1 {
     height: 250px;
 }
 
+.item {
+    margin-right: 10px;
+}
+
 .item .tags {
     display: none;
 }
