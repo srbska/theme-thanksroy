@@ -100,8 +100,10 @@
     queue_js_file('vendor/selectivizr', 'javascripts', array('conditional' => '(gte IE 6)&(lte IE 8)'));
     queue_js_file('vendor/respond');
     queue_js_file('vendor/jquery-accessibleMegaMenu');
+    queue_js_file('jquery-plugins');
     queue_js_file('globals');
     queue_js_file('default');
+    queue_js_file('custom');
     echo head_js();
     ?>
 </head>

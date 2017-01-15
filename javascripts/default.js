@@ -21,23 +21,4 @@ if (!ThanksRoy) {
         });
     };
 
-    function resize() {
-        $('.item.record').each(function(index, item) {
-            // make it half width of parent
-            var $item = $(item);
-            var width = $item.parent().width() / 2;
-            var $a = $item.find('a.image');
-            var margins = parseInt($a.css('marginLeft')) + parseInt($a.css('marginRight'));
-            $a.height(width - margins);
-        });
-    }
-
-    $(function() {
-        window.onresize = function() {
-            resize();
-        };
-
-        resize();
-    });
-
 })(jQuery);
