@@ -23,14 +23,14 @@
             var parentWidth = $item.parent().width();
             var itemWidth = Math.min(maxItemWidth, parentWidth / maxItemsPerRow);
 
-            $item.width(itemWidth - $item.horizontalPadding());
+            $item.width(itemWidth);
 
             if (index !== 0 && index % maxItemsPerRow === 0) {
                 $item.addClass('wrap');
             }
 
             var $img = $item.find('img');
-            $img.height(itemWidth - $img.verticalPadding());
+            $img.height(itemWidth - $img.verticalPadding() - $item.horizontalPadding());
         });
 
         // don't allow items to be below this width.
