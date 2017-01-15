@@ -71,9 +71,9 @@ h1 {
 
 .browse .item {
     border-top: none;
-    /*width: 200px;*/
     float: left;
-    min-height: 300px;
+    padding-top: 0px;
+    padding-bottom: 0px;
 }
 
 #sort-links + .item {
