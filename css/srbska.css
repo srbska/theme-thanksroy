@@ -63,7 +63,7 @@ h1 {
 
 .browse .item {
     border-top: none;
-    width: 200px;
+    /*width: 200px;*/
     float: left;
     min-height: 300px;
 }
@@ -101,7 +101,7 @@ h1 {
 }
 
 .item-img {
-    height: 170px;
+    
 }
 
 .item-description {
@@ -109,7 +109,7 @@ h1 {
 }
 
 .item.hentry h2 {
-    margin-right: 1.4em;
+    /*margin-right: 1.4em;*/
     font-size: 1em;
     overflow: hidden;
     text-overflow: ellipsis;
