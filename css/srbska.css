@@ -69,13 +69,6 @@ h1 {
     padding-top: 0px;
 }
 
-.browse .item {
-    border-top: none;
-    float: left;
-    padding-top: 0px;
-    padding-bottom: 50px;
-}
-
 #sort-links + .item {
     border-top: none;
 }
@@ -99,12 +92,19 @@ h1 {
     height: 250px;
 }
 
-div.item {
-    padding-right: 40px;
-}
+/*.browse .item {
+    border-top: none;
+    float: left;
+    padding-top: 0px;
+    padding-bottom: 60px;
+}*/
 
-div.item.wrap {
-    /*padding-right: 0px;*/
+div.item {
+    border-top: none;
+    float: left;
+    padding-top: 0px;
+    padding-bottom: 60px;
+    padding-right: 40px;
 }
 
 div.item .tags {
@@ -126,8 +126,7 @@ div.item .tags {
     display: none;
 }
 
-.item.hentry h2 {
-    /*margin-right: 1.4em;*/
+div.item.hentry h2 {
     font-size: 1em;
     overflow: hidden;
     text-overflow: ellipsis;
