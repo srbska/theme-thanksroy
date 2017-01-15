@@ -30,7 +30,7 @@
 
             $item.width(itemWidth);
 
-            if (index !== 0 && index % maxItemsPerRow === 0) {
+            if ((index + 1) % maxItemsPerRow === 0) {
                 $item.addClass('wrap');
             }
 
