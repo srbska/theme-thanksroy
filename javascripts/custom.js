@@ -18,10 +18,8 @@
         // ensuring not to scale above the maxItemWidth.
         // add a wrap class to the last item in each row.
         $items.each(function(index, item) {
-            var $item = $(item);
-           
+            var $item = $(item);           
             var parentWidth = $item.parent().width();
-
             var itemWidth = parentWidth / maxItemsPerRow;
 
             $item.width(itemWidth);
@@ -29,6 +27,9 @@
             if (index !== 0 && index % maxItemsPerRow === 0) {
                 $item.addClass('wrap');
             }
+
+            var $img = $item.find('img');
+            $img.height = itemWidth;
         });
 
         // don't allow items to be below this width.
