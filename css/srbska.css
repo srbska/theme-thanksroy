@@ -91,6 +91,10 @@ h1 {
     height: 250px;
 }
 
+.item .tags {
+    display: none;
+}
+
 .item-img .image img {
     max-height: 100%;
     max-width: 100%;
