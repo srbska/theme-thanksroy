@@ -3,7 +3,7 @@
     function resize() {
         // find all items in the page.
         
-        var $items = $('.item');
+        var $items = $('div.item');
         var totalItems = $items.length;
 
         // divide the window width by 300. this is the max number of items per row.
