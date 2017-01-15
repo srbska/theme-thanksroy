@@ -23,7 +23,7 @@
             var parentWidth = $item.parent().width();
             var itemWidth = Math.min(maxItemWidth, parentWidth / maxItemsPerRow);
 
-            $item.width(itemWidth);
+            $item.width(itemWidth - $item.horizontalPadding());
 
             if (index !== 0 && index % maxItemsPerRow === 0) {
                 $item.addClass('wrap');
