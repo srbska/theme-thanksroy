@@ -133,6 +133,10 @@ div.item.hentry h2, div.item.record h3, div.item.collection h2 {
     min-height: 2.6em;
 }
 
+div.item.collection {
+    clear: none;
+}
+
 div.item.collection .view-items-link{
     display: none;
 }
