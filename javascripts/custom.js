@@ -29,7 +29,7 @@
             }
 
             var $img = $item.find('img');
-            $img.height = itemWidth;
+            $img.height(itemWidth);
         });
 
         // don't allow items to be below this width.
