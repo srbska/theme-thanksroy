@@ -14,6 +14,7 @@
 
         var maxItemsPerRow = 4;
         var maxItemWidth = 200;
+        var minItemWidth = 130;
 
         // divide the items up into rows. stretch each row's items to fill the parent element's width
         // ensuring not to scale above the maxItemWidth.
@@ -22,6 +23,10 @@
             var $item = $(item);           
             var parentWidth = $item.parent().width();
             var itemWidth = Math.floor(Math.min(maxItemWidth, parentWidth / maxItemsPerRow));
+
+            if (itemWidth < minItemWidth) {
+                itemWidth = maxItemWidth;
+            }
 
             $item.width(itemWidth);
 
