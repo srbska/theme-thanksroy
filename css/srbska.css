@@ -122,7 +122,7 @@ div.item .tags {
     display: none;
 }
 
-div.item.hentry h2, div.item.hentry h3 {
+div.item.hentry h2, div.item.record h3 {
     font-size: 1em;
     overflow: hidden;
     text-overflow: ellipsis;
