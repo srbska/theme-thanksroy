@@ -14,7 +14,7 @@
 
         var maxItemsPerRow = 4;
         var maxItemWidth = 200;
-        var minItemWidth = 100;
+        var minItemWidth = 80;
 
         // divide the items up into rows. stretch each row's items to fill the parent element's width
         // ensuring not to scale above the maxItemWidth.
