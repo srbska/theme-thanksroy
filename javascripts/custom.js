@@ -21,7 +21,7 @@
         $items.each(function(index, item) {
             var $item = $(item);           
             var parentWidth = $item.parent().width();
-            var itemWidth = Math.min(maxItemWidth, parentWidth / maxItemsPerRow);
+            var itemWidth = Math.floor(Math.min(maxItemWidth, parentWidth / maxItemsPerRow));
 
             $item.width(itemWidth);
 
@@ -30,7 +30,7 @@
             }
 
             var $img = $item.find('img');
-            $img.height(itemWidth - $img.verticalPadding() - $item.horizontalPadding());
+            $img.height(itemWidth - $img.verticalPadding());
         });
 
         // don't allow items to be below this width.
