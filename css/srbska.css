@@ -92,7 +92,7 @@ h1 {
     height: 250px;
 }
 
-.browse .item {
+.browse .item, .page .item {
     border-top: none;
     float: left;
     padding-top: 0px;
