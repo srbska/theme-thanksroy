@@ -137,8 +137,6 @@ div.item.hentry h2 {
     clear: both;
 }
 
-/* 'show' page */
-
 body.item.show .element-set {
     display: none;
 }
@@ -152,6 +150,14 @@ body.item.show .element-set {
 }
 
 #item-output-formats {
+    display: none;
+}
+
+body.collections.show .element-set {
+    display: none;
+}
+
+#collection-items {
     display: none;
 }
 
