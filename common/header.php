@@ -86,11 +86,11 @@
         }
     </style>
     
-    <!-- SRBSKA CSS Customisations -->
+    <!-- CSS Customisations -->
     <?php
     queue_css_file(array('iconfonts','style'));
     queue_css_url('//fonts.googleapis.com/css?family=PT+Serif:400,700,400italic,700italic');
-    queue_css_url('/themes/theme-thanksroy/css/srbska.css');
+    queue_css_url('/themes/theme-thanksroy/css/custom.css');
     echo head_css();
     ?>
 
