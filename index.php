@@ -75,7 +75,7 @@
 
     <style>
         body {
-            background: #424243;
+            background: #252323;
             margin: 0px;
             padding: 0px;
             /*font-family: "PT Serif", Times, serif;*/
