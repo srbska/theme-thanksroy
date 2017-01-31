@@ -55,6 +55,8 @@
                     }
                 }
 
+                $('#debug').text(win_w);
+
             }
 
             $(function() {
@@ -79,6 +81,7 @@
 <body>
     <a href="/about">
         <img id="bg" src="" style="position: fixed; right: 0; bottom: 0" />
+        <span id="debug"></span>
     </a>
 </body>
 
