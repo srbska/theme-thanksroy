@@ -45,8 +45,10 @@
                     
                 }
 
+                var ratio = $bg.height() / $bg.width();
+
                 if (win_w > $bg.width()) {
-                    $bg.css({height: 'auto', width: win_w + 'px'});
+                    $bg.css({height: (win_w * ratio) + 'px', width: win_w + 'px'});
                 }
 
                 // Determine whether width or height should be 100%
