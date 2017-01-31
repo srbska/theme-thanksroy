@@ -74,6 +74,8 @@
     <style>
         body {
             background: #424243;
+            margin: 0px;
+            padding: 0px;
         }
     </style>
 </head>
