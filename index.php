@@ -45,18 +45,18 @@
                     
                 }
 
-                var ratio = $bg.height() / $bg.width();
+                // var ratio = $bg.height() / $bg.width();
 
-                if (win_w > $bg.width()) {
-                    $bg.css({height: (win_w * ratio) + 'px', width: win_w + 'px'});
-                }
+                // if (win_w > $bg.width()) {
+                //     $bg.css({height: (win_w * ratio) + 'px', width: win_w + 'px'});
+                // }
 
                 // Determine whether width or height should be 100%
-                //if ((win_w / win_h) < ($bg.width() / $bg.height())) {
-                //    $bg.css({height: '100%', width: 'auto'});
-                //} else {
-                //    $bg.css({width: '100%', height: 'auto'});
-                //}
+                if ((win_w / win_h) < ($bg.width() / $bg.height())) {
+                   $bg.css({height: '100%', width: 'auto'});
+                } else {
+                   $bg.css({width: '100%', height: 'auto'});
+                }
 
             }
 
