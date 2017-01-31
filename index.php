@@ -17,7 +17,7 @@
                 // Load narrowest background image based on 
                 // viewport width, but never load anything narrower 
                 // that what's already loaded if anything.
-                var available = [640, 1024, 1920];
+                var available = [1024, 1920];
 
                 var current;
                 
