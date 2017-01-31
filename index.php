@@ -24,7 +24,7 @@
                 var current;
                 
                 if ($bg.attr('src')) {
-                    current = $bg.attr('src').match(/([0-9]+)/) ? RegExp.$1 : null;
+                    current = $bg.attr('src').match(/([0-9]+)/) ? parseInt(RegExp.$1) : null;
                 }
 
                 if (!current || ((current < win_w) && (current < available[available.length - 1]))) {
