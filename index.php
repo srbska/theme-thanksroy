@@ -43,11 +43,16 @@
                     
                 }
 
-                // Determine whether width or height should be 100%
-                if ((win_w / win_h) < ($bg.width() / $bg.height())) {
-                   $bg.css({height: '100%', width: 'auto'});
+                // if the width is lower than 720 (houses don't fit)
+                if (win_w < 720) {
+                    $bg.css({height: 'auto', width: ($bg.width() - win_w) + 'px'});
                 } else {
-                   $bg.css({width: '100%', height: 'auto'});
+                    // Determine whether width or height should be 100%
+                    if ((win_w / win_h) < ($bg.width() / $bg.height())) {
+                        $bg.css({height: '100%', width: 'auto'});
+                    } else {
+                        $bg.css({width: '100%', height: 'auto'});
+                    }
                 }
 
             }
