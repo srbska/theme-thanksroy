@@ -68,6 +68,12 @@
         })(jQuery);
 
     </script>
+
+    <style>
+        body {
+            background: #424243;
+        }
+    </style>
 </head>
 
 <body>
