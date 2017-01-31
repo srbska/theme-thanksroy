@@ -93,7 +93,7 @@
         a {
             position: fixed;
             margin: 40px;
-            font-size: 35px;
+            font-size: 32px;
             text-decoration: none;
         }
 
