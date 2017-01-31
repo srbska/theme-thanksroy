@@ -22,8 +22,12 @@
                     2560, 3840, 4860
                 ];
 
-                var current = $bg.attr('src').match(/([0-9]+)/) ? RegExp.$1 : null;
+                var current;
                 
+                if ($bg.attr('src')) {
+                    current = $bg.attr('src').match(/([0-9]+)/) ? RegExp.$1 : null;
+                }
+
                 if (!current || ((current < win_w) && (current < available[available.length - 1]))) {
                 
                     var chosen = available[available.length - 1];
