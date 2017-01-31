@@ -173,6 +173,10 @@ body.collections.show .element-set {
     display: none;
 }
 
+.interview-dialogue .name {
+    font-weight: bold;
+}
+
 @media (max-width:768px) {
         
     #wrap {
