@@ -45,7 +45,7 @@
 
                 // if the width is lower than 720 (houses don't fit)
                 if (win_w < 720) {
-                    $bg.css({height: 'auto', width: ($bg.width() - win_w) + 'px'});
+                    $bg.css({height: 'auto', width: ($bg.width() - ($bg.width() - win_w)) + 'px'});
                 } else {
                     // Determine whether width or height should be 100%
                     if ((win_w / win_h) < ($bg.width() / $bg.height())) {
