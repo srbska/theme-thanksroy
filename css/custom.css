@@ -169,6 +169,10 @@ body.collections.show .element-set {
     display: none;
 }
 
+.interview-dialogue .time {
+    display: none;
+}
+
 @media (max-width:768px) {
         
     #wrap {
