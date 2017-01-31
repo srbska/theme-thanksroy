@@ -59,7 +59,7 @@
 
 <body>
     <a href="/about">
-        <img id="bg" src="/themes/theme-thanksroy/images/pixel.gif" style="position: fixed; left: 0; top: 0" />
+        <img id="bg" src="" style="position: fixed; left: 0; top: 0" />
     </a>
 </body>
 
