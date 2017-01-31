@@ -46,11 +46,11 @@
                 }
 
                 // Determine whether width or height should be 100%
-                if ((win_w / win_h) < ($bg.width() / $bg.height())) {
+                //if ((win_w / win_h) < ($bg.width() / $bg.height())) {
                     $bg.css({height: '100%', width: 'auto'});
-                } else {
-                    $bg.css({width: '100%', height: 'auto'});
-                }
+                //} else {
+                //    $bg.css({width: '100%', height: 'auto'});
+                //}
 
             }
 
@@ -69,7 +69,7 @@
 
 <body>
     <a href="/about">
-        <img id="bg" src="" style="position: fixed; left: 0; top: 0" />
+        <img id="bg" src="" style="position: fixed; right: 0; top: 0" />
     </a>
 </body>
 
