@@ -36,7 +36,7 @@
                     }
                     
                     // Set the new image
-                    $bg.attr('src', '/images/splash_' + chosen + '.jpg');
+                    $bg.attr('src', '/themes/theme-thanksroy/images/splash_' + chosen + '.jpg');
 
                     console.log('Chosen background: ' + chosen);
                     
