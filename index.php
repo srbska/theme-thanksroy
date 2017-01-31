@@ -90,6 +90,13 @@
             bottom: 0;
         }
 
+        a {
+            position: fixed;
+            margin: 40px;
+            font-size: 35px;
+            text-decoration: none;
+        }
+
         a:link {
             color: #fff;
         }
