@@ -177,6 +177,12 @@ body.collections.show .element-set {
     font-weight: bold;
 }
 
+span.caption {
+    font-style: italic;
+    display: block;
+    font-size: 18px;
+}
+
 @media (max-width:768px) {
         
     #wrap {
