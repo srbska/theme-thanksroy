@@ -92,7 +92,7 @@
 
         a {
             position: fixed;
-            margin: 40px;
+            margin: 20px;
             font-size: 32px;
             text-decoration: none;
         }
@@ -117,7 +117,7 @@
 
 <body>
     <img id="bg" src="" />
-    <a href="/about">SRBSKA</a>
+    <a href="/about">SRBSKÁ</a>
 </body>
 
 </html>
