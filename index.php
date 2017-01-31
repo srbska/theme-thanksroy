@@ -3,12 +3,13 @@
 <head>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script>
-        (function() {
 
-            var win = $(window);
+        (function ($) {
 
-            win.resize(function() {
-                
+            function resize() {
+            
+                var win = $(window);
+
                 var win_w = win.width(),
                     win_h = win.height(),
                     $bg    = $("#bg");
@@ -50,10 +51,19 @@
                 } else {
                     $bg.css({width: '100%', height: 'auto'});
                 }
-                
-            }).resize();
-            
+
+            }
+
+            $(function() {
+                window.onresize = function() {
+                    resize();
+                };
+
+                resize();
+            });
+
         })(jQuery);
+
     </script>
 </head>
 
