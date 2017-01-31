@@ -73,7 +73,7 @@
 
 <body>
     <a href="/about">
-        <img id="bg" src="" style="position: fixed; right: 0; top: 0" />
+        <img id="bg" src="" style="position: fixed; right: 0; bottom: 0" />
     </a>
 </body>
 
