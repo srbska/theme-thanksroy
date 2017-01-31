@@ -78,15 +78,39 @@
             background: #424243;
             margin: 0px;
             padding: 0px;
+            /*font-family: "PT Serif", Times, serif;*/
+            font-family: Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif;
+            font-size: 16px;
+            color: #fff;
+        }
+
+        #bg {
+            position: fixed; 
+            right: 0; 
+            bottom: 0;
+        }
+
+        a:link {
+            color: #fff;
+        }
+
+        a:visited {
+            color: #fff;
+        }
+
+        a:hover {
+            color: #fff;
+        }
+        
+        a:active {
+            color: #fff;
         }
     </style>
 </head>
 
 <body>
-    <a href="/about">
-        <img id="bg" src="" style="position: fixed; right: 0; bottom: 0" />
-        <span id="debug"></span>
-    </a>
+    <img id="bg" src="" />
+    <a href="/about">SRBSKA</a>
 </body>
 
 </html>
