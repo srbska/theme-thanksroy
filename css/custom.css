@@ -30,7 +30,7 @@ header {
     width: 20.21053%;
     margin-right: 5.05263%;
     text-transform: uppercase;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
 }
 
 #primary-nav a:hover {
@@ -43,6 +43,14 @@ header {
 
 #primary-nav ul.navigation a:before {
     content: "" !important;
+}
+
+#primary-nav ul.navigation a {
+    font-size: 0.9em;
+}
+
+#primary-nav ul.navigation ul li a {
+    padding-left: 1.5em;
 }
 
 #primary section {
