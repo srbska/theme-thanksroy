@@ -236,7 +236,7 @@ span.caption {
 }
 
 #exhibit-pages ul li.current:before {
-    content: "" !important;
+    width: 0px;
 }
 
 #exhibit-pages a {
