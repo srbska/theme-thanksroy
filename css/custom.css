@@ -41,6 +41,10 @@ header {
     font-weight: bold;
 }
 
+#primary-nav ul.navigation a:before {
+    content: "";
+}
+
 #primary section {
     column-count: 2;
     -moz-column-count: 2;
