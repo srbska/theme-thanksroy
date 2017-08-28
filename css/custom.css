@@ -221,6 +221,28 @@ span.caption {
     border-top-style: none;
 }
 
+#exhibit-pages {
+    border-left-style: none;
+    border-right-style: none;
+}
+
+#exhibit-pages h4 {
+    display: none;
+}
+
+#exhibit-pages ul li {
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+
+#exhibit-pages ul li.current:before {
+    content: "" !important;
+}
+
+#exhibit-pages a {
+    border-bottom: none;
+}
+
 @media (max-width:768px) {
         
     #wrap {
