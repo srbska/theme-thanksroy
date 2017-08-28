@@ -42,7 +42,7 @@ header {
 }
 
 #primary-nav ul.navigation a:before {
-    content: "";
+    content: "" !important;
 }
 
 #primary section {
