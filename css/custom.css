@@ -217,6 +217,10 @@ span.caption {
     display: none;
 }
 
+.exhibits.browse .exhibit {
+    border-top-style: none;
+}
+
 @media (max-width:768px) {
         
     #wrap {
