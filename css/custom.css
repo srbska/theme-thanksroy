@@ -213,6 +213,10 @@ span.caption {
     font-size: 18px;
 }
 
+#sort-links {
+    display: none;
+}
+
 .exhibits.browse .secondary-nav ul.navigation {
     display: none;
 }
