@@ -116,12 +116,17 @@
         a:active {
             color: #fff;
         }
+
+        a.enter {
+            font-size: 20px;
+            font-style: italic;
+        }
     </style>
 </head>
 
 <body>
     <img id="bg" src="" />
-    <a href="/about">SRBSKÁ <br><span class="enter">Enter</span></a>
+    <a href="/about">SRBSKÁ <br><span class="enter">enter</span></a>
 </body>
 
 </html>
