@@ -117,7 +117,7 @@
             color: #fff;
         }
 
-        a.enter {
+        a .enter {
             font-size: 20px;
             font-style: italic;
         }
