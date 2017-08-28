@@ -40,6 +40,12 @@ header {
     -webkit-column-count: 2;
 }
 
+#about #primary section {
+    column-count: 1;
+    -moz-column-count: 1;
+    -webkit-column-count: 1;
+}
+
 .menu-button {
     background-color: #555555;
 }
