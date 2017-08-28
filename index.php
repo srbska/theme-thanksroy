@@ -78,8 +78,6 @@
             background: #252323;
             margin: 0px;
             padding: 0px;
-            /*font-family: "PT Serif", Times, serif;*/
-            /*font-family: Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif;*/
             font-family: "Gill Sans", sans-serif;
             font-size: 16px;
             color: #fff;
