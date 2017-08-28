@@ -121,7 +121,7 @@
 
 <body>
     <img id="bg" src="" />
-    <a href="/about">SRBSKÁ <span class="enter">Enter</span></a>
+    <a href="/about">SRBSKÁ <br><span class="enter">Enter</span></a>
 </body>
 
 </html>
