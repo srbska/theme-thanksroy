@@ -29,6 +29,8 @@ header {
     margin-top: 170px;
     width: 20.21053%;
     margin-right: 5.05263%;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
 
 #primary-nav a:hover {
