@@ -147,6 +147,10 @@ div.item .tags {
     display: none;
 }
 
+h2 {
+    font-weight: lighter;
+}
+
 div.item.hentry h2, div.item.record h3, div.item.collection h2 {
     font-size: 1em;
     overflow: hidden;
