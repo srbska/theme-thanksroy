@@ -12,7 +12,8 @@ header {
 
 #content {
     padding-top: 100px;
-    font-family: Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif;
+    /*font-family: Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif;*/
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 1.3em;
 }
 
