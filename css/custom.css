@@ -7,11 +7,12 @@
 }
 
 @media screen {
-.button, button,
-input[type="reset"],
-input[type="submit"],
-input[type="button"] {
-    font-family: "Gill sans", sans-serif;
+    .button, button,
+    input[type="reset"],
+    input[type="submit"],
+    input[type="button"] {
+        font-family: "Gill sans", sans-serif;
+    }
 }
 
 textarea,
@@ -321,4 +322,8 @@ span.caption {
     .record {
         width: 100%;
     }
+}
+
+#contribution-type-form h2 {
+    display: none;
 }
