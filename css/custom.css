@@ -74,6 +74,14 @@ header {
     border: 5px solid transparent;
 }
 
+.jcarousel-control-prev {
+    border: none;
+}
+
+.jcarousel-control-next {
+    border: none;
+}
+
 #about #primary section {
     column-count: 2;
     -moz-column-count: 2;
