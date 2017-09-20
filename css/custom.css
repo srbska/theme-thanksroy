@@ -59,6 +59,17 @@ header {
     -webkit-column-count: 2;
 }
 
+#about .jcarousel-pagination{
+    display: none;
+}
+
+#about .jcarousel-wrapper{
+    padding: 0px;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    border-radius: 0px;
+}
+
 #about #primary section {
     column-count: 2;
     -moz-column-count: 2;
