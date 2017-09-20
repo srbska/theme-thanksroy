@@ -326,13 +326,13 @@ span.caption {
 
 /* video */
 
-#exhibit-block iframe {
+.exhibit-block iframe {
     height: 464px;
 }
 
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
-    #exhibit-block iframe {
+    .exhibit-block iframe {
         height: 160px;
     }
 }
