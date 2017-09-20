@@ -70,6 +70,10 @@ header {
     border-radius: 0px;
 }
 
+#about .jcarousel img {
+    border: 5px solid transparent;
+}
+
 #about #primary section {
     column-count: 2;
     -moz-column-count: 2;
