@@ -301,7 +301,7 @@ span.caption {
     border-bottom: none;
 }
 
-#exhibits .exhibit {
+.exhibits .exhibit {
     float: left;
 }
 
