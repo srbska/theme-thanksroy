@@ -309,6 +309,10 @@ span.caption {
     float: left;
 }
 
+#outputs {
+    display: none;
+}
+
 @media (max-width:768px) {
         
     #wrap {
