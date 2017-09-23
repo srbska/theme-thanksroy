@@ -301,6 +301,10 @@ span.caption {
     border-bottom: none;
 }
 
+#exhibits .exhibit {
+    float: left;
+}
+
 @media (max-width:768px) {
         
     #wrap {
