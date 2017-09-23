@@ -2,7 +2,7 @@
 
     function resize() {
        
-        var $items = $('div.item div.exhibit');
+        var $items = $('[div.item],[div.exhibit]');
         var totalItems = $items.length;
 
         var maxItemsPerRow = 4;
