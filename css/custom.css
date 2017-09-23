@@ -275,6 +275,10 @@ span.caption {
     display: none;
 }
 
+.exhibits.browse .secondary-nav {
+    display: none;
+}
+
 .exhibits.browse .exhibit {
     border-top-style: none;
 }
