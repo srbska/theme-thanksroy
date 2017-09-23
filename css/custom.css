@@ -221,6 +221,10 @@ div.item.collection .collection-description p {
     min-height: 2.6em;
 }
 
+div.item.collection .collection-description p {
+    font-size: 0.8em;
+}
+
 div.item.collection {
     clear: none;
 }
