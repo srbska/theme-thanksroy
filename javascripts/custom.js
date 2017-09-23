@@ -21,13 +21,15 @@
         $items.each(function(index, item) {
             var $item = $(item);           
             var parentWidth = $item.parent().width();
-            var itemWidth = itemWidth = Math.floor(Math.min(maxItemWidth, parentWidth / maxItemsPerRow));
+            var itemWidth = itemWidth = Math.min(maxItemWidth, parentWidth / maxItemsPerRow);
 
             itemWidth -= $item.horizontalPadding();
 
             if (itemWidth < minItemWidth) {
                 itemWidth = maxItemWidth;
             }
+
+            itemWidth = Math.floor(itemWidth);
 
             $item.width(itemWidth);
 

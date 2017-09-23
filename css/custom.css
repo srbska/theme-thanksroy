@@ -175,7 +175,7 @@ h1 {
     border-top: none;
     float: left;
     padding-top: 0px;
-    padding-bottom: 30px;
+    padding-bottom: 40px;
 }
 
 div.item, div.exhibit {
@@ -358,6 +358,12 @@ span.caption {
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
     .exhibit-block iframe {
         height: 160px;
+    }
+
+    #primary section {
+        column-count: 1;
+        -moz-column-count: 1;
+        -webkit-column-count: 1;
     }
 }
 
