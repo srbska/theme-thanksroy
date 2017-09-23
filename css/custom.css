@@ -349,7 +349,6 @@ span.caption {
 }
 
 /* video */
-
 .exhibit-block iframe {
     height: 450px;
 }
@@ -360,7 +359,7 @@ span.caption {
         height: 160px;
     }
 
-    #primary section {
+    #about #primary section {
         column-count: 1;
         -moz-column-count: 1;
         -webkit-column-count: 1;
