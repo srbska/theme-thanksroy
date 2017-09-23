@@ -115,6 +115,10 @@ header {
     -webkit-column-count: 2;
 }
 
+#about #primary section > p {
+    margin-top: 0px;
+}
+
 .menu-button {
     background-color: #555555;
 }
