@@ -205,7 +205,11 @@ h2 {
     font-weight: lighter;
 }
 
-div.item.hentry h2, div.item.record h3, div.item.collection h2, div.exhibit h2 {
+div.item.hentry h2, 
+div.item.record h3, 
+div.item.collection h2, 
+div.exhibit h2, 
+div.item.collection .collection-description p {
     font-weight: normal;
     font-size: 1em;
     overflow: hidden;
