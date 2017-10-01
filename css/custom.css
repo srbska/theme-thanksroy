@@ -317,6 +317,10 @@ span.caption {
     float: left;
 }
 
+#exhibit-nav-up {
+    display: none;
+}
+
 #outputs {
     display: none;
 }
