@@ -8,12 +8,6 @@ $searchRecordTypes = get_search_record_types();
 <?php if ($total_results): ?>
 <?php echo pagination_links(); ?>
 <table id="search-results">
-    <thead>
-        <tr>
-            <th><?php echo __('Record Type');?></th>
-            <th><?php echo __('Title');?></th>
-        </tr>
-    </thead>
     <tbody>
         <?php $filter = new Zend_Filter_Word_CamelCaseToDash; ?>
         <?php foreach (loop('search_texts') as $searchText): ?>
