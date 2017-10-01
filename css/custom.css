@@ -384,6 +384,10 @@ span.caption {
     margin: 20px 0 20px 0;
 }
 
+#search-results {
+    border: none;
+}
+
 #search-results .item img{
     width: 280px;
 }
