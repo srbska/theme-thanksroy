@@ -379,3 +379,7 @@ span.caption {
 #contribution-type-form h2 {
     display: none;
 }
+
+.contribution #form-submit {
+    margin: 20px 0 20px 0;
+}
