@@ -388,6 +388,11 @@ span.caption {
     border: none;
 }
 
+#search-results td {
+    border: none;
+    padding-left: 0px;
+}
+
 #search-results .item img{
     width: 280px;
 }
