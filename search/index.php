@@ -16,9 +16,6 @@ $searchRecordTypes = get_search_record_types();
         <?php set_current_record($recordType, $record); ?>
         <tr class="<?php echo strtolower($filter->filter($recordType)); ?>">
             <td>
-                <?php echo $searchRecordTypes[$recordType]; ?>
-            </td>
-            <td>
                 <?php if ($recordImage = record_image($recordType, 'square_thumbnail')): ?>
                     <?php echo link_to($record, 'show', $recordImage, array('class' => 'image')); ?>
                 <?php endif; ?>

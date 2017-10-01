@@ -383,3 +383,7 @@ span.caption {
 .contribution #form-submit {
     margin: 20px 0 20px 0;
 }
+
+#search-results .item img{
+    width: 280px;
+}
