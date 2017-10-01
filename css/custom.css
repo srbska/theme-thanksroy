@@ -7,6 +7,11 @@
 }
 
 @media screen {
+
+    body {
+        font-size: 15px;
+    }
+
     .button, button,
     input[type="reset"],
     input[type="submit"],
