@@ -403,4 +403,9 @@ span.caption {
     #exhibit-page-navigation {
         display: none;
     }
+
+    #content h1 {
+        font-size: 25px;
+        line-height: 40px;
+    }
 }
