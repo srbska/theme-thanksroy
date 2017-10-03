@@ -66,6 +66,10 @@ header {
     letter-spacing: 1px;
 }
 
+#primary-nav button {
+    background-color: transparent;
+}
+
 #primary-nav a:hover {
     font-weight: normal;
 }
@@ -331,33 +335,6 @@ span.caption {
     display: none;
 }
 
-@media (max-width:768px) {
-        
-    #wrap {
-        border-top: none !important;
-    }
-
-    #primary-nav {
-        margin-top: 0px !important;
-        width: 100%;
-        margin-right: 0px;
-    }
-
-    #primary section {
-        column-count: 1;
-        -moz-column-count: 1;
-        -webkit-column-count: 1;
-    }
-
-    #content {
-        padding-top: 0px !important;
-    }
-
-    .record {
-        width: 100%;
-    }
-}
-
 /* video */
 .exhibit-block iframe {
     height: 440px;
@@ -382,6 +359,33 @@ span.caption {
 
 #search-results .item img{
     width: 280px;
+}
+
+@media (max-width:768px) {
+    
+    #wrap {
+        border-top: none !important;
+    }
+
+    #primary-nav {
+        margin-top: 0px !important;
+        width: 100%;
+        margin-right: 0px;
+    }
+
+    #primary section {
+        column-count: 1;
+        -moz-column-count: 1;
+        -webkit-column-count: 1;
+    }
+
+    #content {
+        padding-top: 0px !important;
+    }
+
+    .record {
+        width: 100%;
+    }
 }
 
 /* Smartphones (portrait and landscape) ----------- */
