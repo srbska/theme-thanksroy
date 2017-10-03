@@ -363,19 +363,6 @@ span.caption {
     height: 440px;
 }
 
-/* Smartphones (portrait and landscape) ----------- */
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
-    .exhibit-block iframe {
-        height: 160px;
-    }
-
-    #about #primary section {
-        column-count: 1;
-        -moz-column-count: 1;
-        -webkit-column-count: 1;
-    }
-}
-
 #contribution-type-form h2 {
     display: none;
 }
@@ -395,4 +382,21 @@ span.caption {
 
 #search-results .item img{
     width: 280px;
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    .exhibit-block iframe {
+        height: 160px;
+    }
+
+    #about #primary section {
+        column-count: 1;
+        -moz-column-count: 1;
+        -webkit-column-count: 1;
+    }
+
+    #exhibit-page-navigation {
+        display: none;
+    }
 }
