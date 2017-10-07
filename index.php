@@ -8,13 +8,28 @@
 
         (function ($) {
 
+            var $bg;
+
+            function scaleImage(windowWidth, windowHeight) {
+                // if the width is lower than 800 (houses don't fit)
+                //if (windowWidth < 800) {
+                    //$bg.css({height: 'auto', width: (windowWidth * 2) - 100 + 'px'});
+                //} else {
+                    // Determine whether width or height should be 100%
+                    if ((windowWidth / windowHeight) < ($bg.width() / $bg.height())) {
+                        $bg.css({height: '100%', width: 'auto'});
+                    } else {
+                        $bg.css({width: '100%', height: 'auto'});
+                    }
+                //}
+            }
+
             function resize() {
             
-                var win = $(window);
+                var $win = $(window);
 
-                var win_w = win.width(),
-                    win_h = win.height(),
-                    $bg    = $("#bg");
+                var windowWidth = $win.width(),
+                    windowHeight = $win.height();
 
                 // Load narrowest background image based on 
                 // viewport width, but never load anything narrower 
@@ -27,12 +42,12 @@
                     current = $bg.attr('src').match(/([0-9]+)/) ? parseInt(RegExp.$1) : null;
                 }
 
-                if (!current || ((current < win_w) && (current < available[available.length - 1]))) {
+                if (!current || ((current < windowWidth) && (current < available[available.length - 1]))) {
                 
                     var chosen = available[available.length - 1];
                     
                     for (var i = 0; i < available.length; i++) {
-                        if (available[i] >= win_w) {
+                        if (available[i] >= windowWidth) {
                             chosen = available[i];
                             break;
                         }
@@ -41,25 +56,17 @@
                     $bg.hide();
 
                     $bg.on('load', function() {
-                        // if the width is lower than 800 (houses don't fit)
-                        //if (win_w < 800) {
-                            //$bg.css({height: 'auto', width: (win_w * 2) - 100 + 'px'});
-                        //} else {
-                            // Determine whether width or height should be 100%
-                            if ((win_w / win_h) < ($bg.width() / $bg.height())) {
-                                $bg.css({height: '100%', width: 'auto'});
-                            } else {
-                                $bg.css({width: '100%', height: 'auto'});
-                            }
-                        //}
-
-                        //$('#debug').text(win_w);
+                        
+                        scaleImage(windowWidth, windowHeight);
+                        //$('#debug').text(windowWidth);
 
                         $bg.show();
                     });
 
                     // Set the new image
                     $bg.attr('src', '/themes/theme-thanksroy/images/splash_' + chosen + '.jpg');
+
+                    scaleImage(windowWidth, windowHeight);
 
                     console.log('Chosen background: ' + chosen);
                     
@@ -68,6 +75,9 @@
             }
 
             $(function() {
+
+                $bg = $("#bg");
+
                 window.onresize = function() {
                     resize();
                 };
