@@ -64,7 +64,7 @@
                     // Set the new image
                     $bg.attr('src', '/themes/theme-thanksroy/images/splash_' + chosen + '.jpg');
 
-                    console.log('Chosen background: ' + chosen);              
+                    //console.log('Chosen background: ' + chosen);              
                 }
 
                 scaleImage();
@@ -127,10 +127,6 @@
             color: #fff;
         }
 
-        .credit {
-            font-size: 20px;
-        }
-
         a .enter {
             font-size: 20px;
             font-style: italic;
@@ -140,7 +136,7 @@
 
 <body>
     <img id="bg" src="" />
-    <a href="/about">SRBSKÁ<br><span class="credit">A project by Sophie Dixon</span><br><span class="enter">enter</span></a>
+    <a href="/about">SRBSKÁ <br><span class="enter">enter</span></a>
 </body>
 
 </html>
