@@ -27,7 +27,7 @@
                 $item.addClass('autoWidth');
                 $item.width('100%');
                 $img.height('auto');
-                $img.width(Math.floor($item.width() - $img.horizontalPadding()));
+                $img.width(Math.floor($item.width() - ($img.outerWidth() - $img.width())));
             } else {
                 itemWidth -= Math.floor($item.horizontalPadding());
                 $item.removeClass('autoWidth');
