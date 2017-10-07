@@ -38,7 +38,7 @@
                         }
                     }
                     
-                    $bg.load(function() {
+                    $bg.on('load', function() {
                         // if the width is lower than 800 (houses don't fit)
                         //if (win_w < 800) {
                             //$bg.css({height: 'auto', width: (win_w * 2) - 100 + 'px'});
