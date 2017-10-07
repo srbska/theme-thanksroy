@@ -188,11 +188,6 @@ h1 {
     padding-bottom: 40px;
 }
 
-/* div.item img, div.exhibit img {
-    border: none;
-    padding: 0px;
-} */
-
 div.item, div.exhibit {
     padding-right: 40px;
 }
@@ -351,6 +346,10 @@ span.caption {
 
 #contribute #content img {
     max-width: 500px;
+}
+
+#contribute #content form {
+    width: 200px;
 }
 
 #contribution-type-form h2 {
