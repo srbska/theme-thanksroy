@@ -8,9 +8,9 @@
 
         (function ($) {
 
-            var $bg;
+            var $bg, windowWidth, windowHeight;
 
-            function scaleImage(windowWidth, windowHeight) {
+            function scaleImage() {
                 // if the width is lower than 800 (houses don't fit)
                 //if (windowWidth < 800) {
                     //$bg.css({height: 'auto', width: (windowWidth * 2) - 100 + 'px'});
@@ -28,8 +28,8 @@
             
                 var $win = $(window);
 
-                var windowWidth = $win.width(),
-                    windowHeight = $win.height();
+                windowWidth = $win.width();
+                windowHeight = $win.height();
 
                 // Load narrowest background image based on 
                 // viewport width, but never load anything narrower 
@@ -53,9 +53,11 @@
                         }
                     }
 
+                    $bg.hide();
+
                     $bg.on('load', function() {
-                        
-                        scaleImage(windowWidth, windowHeight);
+                        $bg.show();
+                        scaleImage();
                         //$('#debug').text(windowWidth);
                     });
 
@@ -65,8 +67,7 @@
                     console.log('Chosen background: ' + chosen);              
                 }
 
-                scaleImage(windowWidth, windowHeight);
-
+                scaleImage();
             }
 
             $(function() {
