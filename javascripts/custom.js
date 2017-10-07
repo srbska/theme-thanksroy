@@ -28,7 +28,7 @@
 
             if (itemWidth < minItemWidth) {
                 autoWidth = true;
-                itemWidth = '100%';
+                itemWidth = 'auto';
                 $item.addClass('autoWidth');
             } else {
                 $item.removeClass('autoWidth');
@@ -45,8 +45,8 @@
             if (!autoWidth) {                
                 $img.height(itemWidth - $img.verticalPadding());
             } else {
-                $img.width('100%');
                 $img.height('auto');
+                $img.width('100%');
             }
             
         });
