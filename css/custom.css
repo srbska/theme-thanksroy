@@ -348,7 +348,7 @@ span.caption {
     max-width: 500px;
 }
 
-#contribute #content form {
+#contribute #content form input[type="image"] {
     width: 200px;
 }
 
