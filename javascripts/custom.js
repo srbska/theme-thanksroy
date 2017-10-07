@@ -49,9 +49,10 @@
 
             if (!autoWidth) {                
                 $img.height(itemWidth - $img.verticalPadding());
+                $img.width('auto');
             } else {
                 $img.height('auto');
-                $img.width('100%');
+                $img.width('auto');
             }
             
         });
