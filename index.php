@@ -52,15 +52,11 @@
                             break;
                         }
                     }
-                    
-                    $bg.hide();
 
                     $bg.on('load', function() {
                         
                         scaleImage(windowWidth, windowHeight);
                         //$('#debug').text(windowWidth);
-
-                        $bg.show();
                     });
 
                     // Set the new image
