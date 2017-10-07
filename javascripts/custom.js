@@ -19,7 +19,6 @@
         }
 
         $items.each(function(index, item) {
-            var autoWidth = false;
             var $item = $(item);
             var $img = $item.find('img');
             maxItemWidth = $img.width();
@@ -34,13 +33,13 @@
             //itemWidth -= Math.floor($item.horizontalPadding());
 
             if (itemWidth < minItemWidth) {
-                autoWidth = true;
-                itemWidth = 'auto';
+                $img.width('auto');
                 $item.addClass('autoWidth');
                 $img.height('auto');
                 $img.width('100%');
             } else {
                 $item.removeClass('autoWidth');
+                $img.width(itemWidth);
                 $img.height(itemWidth - $img.verticalPadding());
                 $img.width('auto');
             }
