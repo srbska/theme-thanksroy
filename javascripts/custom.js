@@ -45,7 +45,7 @@
         // video
 
         var $video = $('.exhibits iframe');
-        $video.height($video.width * 0.5625);
+        $video.height($video.width() * 0.5625);
 
     }
 
