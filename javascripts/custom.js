@@ -22,15 +22,13 @@
             var isPercentage = false;
             var $item = $(item);           
             var parentWidth = $item.parent().width();
-            var itemWidth = Math.min(maxItemWidth, parentWidth / maxItemsPerRow);
+            var itemWidth = Math.floor(Math.min(maxItemWidth, parentWidth / maxItemsPerRow));
 
-            itemWidth -= $item.horizontalPadding();
+            itemWidth -= Math.floor($item.horizontalPadding());
 
             if (itemWidth < minItemWidth) {
-                itemWidth = '100%';
+                itemWidth = 'auto';
                 isPercentage = true;
-            } else {
-                itemWidth = Math.floor(itemWidth);
             }
 
             $item.width(itemWidth);
