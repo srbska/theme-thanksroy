@@ -7,11 +7,7 @@
 
         var maxItemsPerRow = 4;
         var maxItemWidth = 300;
-        var minItemWidth = 100;
-
-        // if there are fewer totalItems than maxItemsPerRow
-        // make maxItemsPerRow = totalItems
-        // remove maxItemWidth
+        var minItemWidth = 120;
 
         if (totalItems < maxItemsPerRow) {
             maxItemsPerRow = totalItems;
