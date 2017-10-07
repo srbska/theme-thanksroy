@@ -31,33 +31,35 @@
                 
                     var chosen = available[available.length - 1];
                     
-                    for (var i=0; i<available.length; i++) {
+                    for (var i = 0; i < available.length; i++) {
                         if (available[i] >= win_w) {
                             chosen = available[i];
                             break;
                         }
                     }
                     
+                    $bg.load(function() {
+                        // if the width is lower than 800 (houses don't fit)
+                        //if (win_w < 800) {
+                            //$bg.css({height: 'auto', width: (win_w * 2) - 100 + 'px'});
+                        //} else {
+                            // Determine whether width or height should be 100%
+                            if ((win_w / win_h) < ($bg.width() / $bg.height())) {
+                                $bg.css({height: '100%', width: 'auto'});
+                            } else {
+                                $bg.css({width: '100%', height: 'auto'});
+                            }
+                        //}
+
+                        $('#debug').text(win_w);
+                    });
+
                     // Set the new image
                     $bg.attr('src', '/themes/theme-thanksroy/images/splash_' + chosen + '.jpg');
 
                     console.log('Chosen background: ' + chosen);
                     
                 }
-
-                // if the width is lower than 800 (houses don't fit)
-                //if (win_w < 800) {
-                    //$bg.css({height: 'auto', width: (win_w * 2) - 100 + 'px'});
-                //} else {
-                    // Determine whether width or height should be 100%
-                    if ((win_w / win_h) < ($bg.width() / $bg.height())) {
-                        $bg.css({height: '100%', width: 'auto'});
-                    } else {
-                        $bg.css({width: '100%', height: 'auto'});
-                    }
-                //}
-
-                $('#debug').text(win_w);
 
             }
 
