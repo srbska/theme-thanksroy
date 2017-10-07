@@ -40,8 +40,6 @@
                 $img.width('auto');
             }
 
-            $item.width(itemWidth);
-
             // if ((index + 1) % maxItemsPerRow === 0) {
             //     $item.addClass('wrap');
             // }
