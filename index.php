@@ -38,6 +38,8 @@
                         }
                     }
                     
+                    $bg.hide();
+
                     $bg.on('load', function() {
                         // if the width is lower than 800 (houses don't fit)
                         //if (win_w < 800) {
@@ -51,7 +53,9 @@
                             }
                         //}
 
-                        $('#debug').text(win_w);
+                        //$('#debug').text(win_w);
+
+                        $bg.show();
                     });
 
                     // Set the new image
