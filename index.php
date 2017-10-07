@@ -127,6 +127,10 @@
             color: #fff;
         }
 
+        .credit {
+            font-size: 20px;
+        }
+
         a .enter {
             font-size: 20px;
             font-style: italic;
@@ -136,7 +140,7 @@
 
 <body>
     <img id="bg" src="" />
-    <a href="/about">SRBSKÁ <br><span class="enter">enter</span></a>
+    <a href="/about">SRBSKÁ<br><span class="credit">A project by Sophie Dixon</span><br><span class="enter">enter</span></a>
 </body>
 
 </html>
