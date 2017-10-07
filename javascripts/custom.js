@@ -6,7 +6,7 @@
         var totalItems = $items.length;
 
         var maxItemsPerRow = 4;
-        var maxItemWidth = 280;
+        var maxItemWidth = 300;
         var minItemWidth = 100;
 
         // if there are fewer totalItems than maxItemsPerRow
@@ -21,15 +21,15 @@
         $items.each(function(index, item) {
             var $item = $(item);           
             var parentWidth = $item.parent().width();
-            var itemWidth = itemWidth = Math.min(maxItemWidth, parentWidth / maxItemsPerRow);
+            var itemWidth = Math.min(maxItemWidth, parentWidth / maxItemsPerRow);
 
             itemWidth -= $item.horizontalPadding();
 
             if (itemWidth < minItemWidth) {
-                itemWidth = maxItemWidth;
+                itemWidth = '100%';
+            } else {
+                itemWidth = Math.floor(itemWidth);
             }
-
-            itemWidth = Math.floor(itemWidth);
 
             $item.width(itemWidth);
 
