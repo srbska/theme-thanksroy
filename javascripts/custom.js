@@ -25,7 +25,7 @@
 
             if (itemWidth < minItemWidth) {
                 $item.addClass('autoWidth');
-                $item.width('auto');
+                $item.width('100%');
                 $img.height('auto');
                 $img.width('100%');
             } else {
