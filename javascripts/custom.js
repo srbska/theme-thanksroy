@@ -46,7 +46,6 @@
                 $img.height(itemWidth - $img.verticalPadding());
             } else {
                 $img.height('auto');
-                $img.width('100%');
             }
             
         });
