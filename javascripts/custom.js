@@ -15,16 +15,21 @@
 
         if (totalItems < maxItemsPerRow) {
             maxItemsPerRow = totalItems;
-            maxItemWidth = Number.MAX_VALUE;
+            //maxItemWidth = Number.MAX_VALUE;
         }
 
         $items.each(function(index, item) {
             var autoWidth = false;
             var $item = $(item);           
             var parentWidth = $item.parent().width();
-            var itemWidth = Math.floor(Math.min(maxItemWidth, parentWidth / maxItemsPerRow));
 
-            itemWidth -= Math.floor($item.horizontalPadding());
+            // the item width is either the maxItemWidth, or the parent width divided by the max number
+            // of items per row. whichever is smaller.
+            //var itemWidth = Math.floor(Math.min(maxItemWidth, parentWidth / maxItemsPerRow));
+
+            //itemWidth -= Math.floor($item.horizontalPadding());
+
+            var itemWidth = Math.floor(parentWidth / maxItemsPerRow);
 
             if (itemWidth < minItemWidth) {
                 autoWidth = true;
@@ -46,6 +51,7 @@
                 $img.height(itemWidth - $img.verticalPadding());
             } else {
                 $img.height('auto');
+                $img.width('100%');
             }
             
         });
