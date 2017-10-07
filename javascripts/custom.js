@@ -52,7 +52,7 @@
                 $img.width('auto');
             } else {
                 $img.height('auto');
-                $img.width('auto');
+                $img.width('100%');
             }
             
         });
