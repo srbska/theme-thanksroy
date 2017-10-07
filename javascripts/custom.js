@@ -7,7 +7,7 @@
 
         var maxItemsPerRow = 4;
         var maxItemWidth = 300;
-        var minItemWidth = 80;
+        var minItemWidth = 150;
 
         // if there are fewer totalItems than maxItemsPerRow
         // make maxItemsPerRow = totalItems
@@ -26,8 +26,6 @@
             // the item width is either the maxItemWidth, or the parent width divided by the max number
             // of items per row. whichever is smaller. we don't want the images scaling beyond their max width.
             var itemWidth = Math.floor(Math.min(maxItemWidth, parentWidth / maxItemsPerRow));
-
-            //var itemWidth = Math.floor(parentWidth / maxItemsPerRow);
 
             if (itemWidth < minItemWidth) {
                 $item.addClass('autoWidth');
