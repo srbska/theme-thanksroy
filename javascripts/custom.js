@@ -22,7 +22,7 @@
             var autoWidth = false;
             var $item = $(item);
             var $img = $item.find('img');
-            maxItemWidth = $img.width();
+            maxItemWidth = $img.outerWidth();
             var parentWidth = $item.parent().width();
 
             // the item width is either the maxItemWidth, or the parent width divided by the max number
