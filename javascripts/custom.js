@@ -27,9 +27,9 @@
             // of items per row. whichever is smaller.
             //var itemWidth = Math.floor(Math.min(maxItemWidth, parentWidth / maxItemsPerRow));
 
-            //itemWidth -= Math.floor($item.horizontalPadding());
-
             var itemWidth = Math.floor(parentWidth / maxItemsPerRow);
+
+            itemWidth -= Math.floor($item.horizontalPadding());
 
             if (itemWidth < minItemWidth) {
                 autoWidth = true;
