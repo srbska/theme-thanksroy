@@ -62,11 +62,10 @@
                     // Set the new image
                     $bg.attr('src', '/themes/theme-thanksroy/images/splash_' + chosen + '.jpg');
 
-                    scaleImage(windowWidth, windowHeight);
-
-                    console.log('Chosen background: ' + chosen);
-                    
+                    console.log('Chosen background: ' + chosen);              
                 }
+
+                scaleImage(windowWidth, windowHeight);
 
             }
 
