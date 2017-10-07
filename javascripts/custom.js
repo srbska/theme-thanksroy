@@ -6,8 +6,8 @@
         var totalItems = $items.length;
 
         var maxItemsPerRow = 4;
-        var maxItemWidth = 300;
-        var minItemWidth = 100;
+        var maxItemWidth;
+        var minItemWidth = 80;
 
         // if there are fewer totalItems than maxItemsPerRow
         // make maxItemsPerRow = totalItems
@@ -20,14 +20,16 @@
 
         $items.each(function(index, item) {
             var autoWidth = false;
-            var $item = $(item);           
+            var $item = $(item);
+            var $img = $item.find('img');
+            maxItemWidth = $img.width();
             var parentWidth = $item.parent().width();
 
             // the item width is either the maxItemWidth, or the parent width divided by the max number
             // of items per row. whichever is smaller.
-            //var itemWidth = Math.floor(Math.min(maxItemWidth, parentWidth / maxItemsPerRow));
+            var itemWidth = Math.floor(Math.min(maxItemWidth, parentWidth / maxItemsPerRow));
 
-            var itemWidth = Math.floor(parentWidth / maxItemsPerRow);
+            //var itemWidth = Math.floor(parentWidth / maxItemsPerRow);
 
             itemWidth -= Math.floor($item.horizontalPadding());
 
@@ -44,8 +46,6 @@
             // if ((index + 1) % maxItemsPerRow === 0) {
             //     $item.addClass('wrap');
             // }
-
-            var $img = $item.find('img');
 
             if (!autoWidth) {                
                 $img.height(itemWidth - $img.verticalPadding());
