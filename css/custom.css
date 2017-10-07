@@ -340,6 +340,10 @@ span.caption {
     height: 440px;
 }
 
+#contribute #content img {
+    max-width: 500px;
+}
+
 #contribution-type-form h2 {
     display: none;
 }
