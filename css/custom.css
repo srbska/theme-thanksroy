@@ -188,12 +188,12 @@ h1 {
     padding-bottom: 40px;
 }
 
-.browse .item.autoWidth, .page .item.autoWidth, .exhibits .exhibit.autoWidth {
-    padding-right: 0px;
-}
-
 div.item, div.exhibit {
     padding-right: 40px;
+}
+
+div.item.autoWidth, div.exhibit.autoWidth {
+    padding-right: 0px;
 }
 
 div.item .tags {

@@ -28,7 +28,7 @@
 
             if (itemWidth < minItemWidth) {
                 autoWidth = true;
-                itemWidth = 'auto';
+                itemWidth = '100%';
                 $item.addClass('autoWidth');
             } else {
                 $item.removeClass('autoWidth');
