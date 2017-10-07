@@ -29,14 +29,13 @@
 
             //var itemWidth = Math.floor(parentWidth / maxItemsPerRow);
 
-            itemWidth -= Math.floor($item.horizontalPadding());
-
             if (itemWidth < minItemWidth) {
                 $item.addClass('autoWidth');
                 $item.width('auto');
                 $img.height('auto');
                 $img.width('100%');
             } else {
+                itemWidth -= Math.floor($item.horizontalPadding());
                 $item.removeClass('autoWidth');
                 $item.width(itemWidth);
                 $img.height(itemWidth - $img.verticalPadding());
