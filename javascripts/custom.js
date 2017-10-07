@@ -19,7 +19,7 @@
         }
 
         $items.each(function(index, item) {
-            var isPercentage = false;
+            var autoWidth = false;
             var $item = $(item);           
             var parentWidth = $item.parent().width();
             var itemWidth = Math.floor(Math.min(maxItemWidth, parentWidth / maxItemsPerRow));
@@ -28,7 +28,7 @@
 
             if (itemWidth < minItemWidth) {
                 itemWidth = 'auto';
-                isPercentage = true;
+                autoWidth = true;
             }
 
             $item.width(itemWidth);
@@ -37,9 +37,12 @@
             //     $item.addClass('wrap');
             // }
 
-            if (!isPercentage) {
-                var $img = $item.find('img');
+            var $img = $item.find('img');
+
+            if (!autoWidth) {                
                 $img.height(itemWidth - $img.verticalPadding());
+            } else {
+                $img.width('100%');
             }
             
         });
