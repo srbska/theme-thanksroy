@@ -27,8 +27,11 @@
             itemWidth -= Math.floor($item.horizontalPadding());
 
             if (itemWidth < minItemWidth) {
-                itemWidth = 'auto';
                 autoWidth = true;
+                itemWidth = 'auto';
+                $item.addClass('autoWidth');
+            } else {
+                $item.removeClass('autoWidth');
             }
 
             $item.width(itemWidth);
