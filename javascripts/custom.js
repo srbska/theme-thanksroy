@@ -43,9 +43,11 @@
         });
 
         // video
-
         var $video = $('.exhibits iframe');
         $video.height($video.width() * 0.5625);
+
+        // remove tabindex
+        $('#content').removeAttr('tabindex');
 
     }
 
