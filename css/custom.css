@@ -366,6 +366,7 @@ span.caption {
 
 #search-results .item img{
     width: 280px;
+    height: auto;
 }
 
 @media (max-width:768px) {
