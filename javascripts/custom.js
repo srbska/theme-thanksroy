@@ -174,6 +174,8 @@ function initMap() {
         ]
     });
 
+    map.setMapTypeId('terrain');
+
     var marker = new google.maps.Marker({
         position: latlong,
         map: map,
