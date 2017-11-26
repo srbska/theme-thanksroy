@@ -109,6 +109,8 @@ header {
 
 #about .jcarousel img {
     border: 5px solid transparent;
+    max-width: none;
+    width: 100%;
 }
 
 .jcarousel-control-prev {
