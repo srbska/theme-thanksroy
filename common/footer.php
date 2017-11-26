@@ -36,5 +36,7 @@
     ga('send', 'pageview');
     </script>
 
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBy4iSRaEqFzhR5AsbLTSwdMy5qsIswSuw&callback=initMap" async defer></script>
+
 </body>
 </html>
