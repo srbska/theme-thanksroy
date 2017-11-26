@@ -129,6 +129,10 @@ header {
     margin-top: 0px;
 }
 
+#about #map {
+    height: 400px;
+}
+
 .menu-button {
     background-color: #555555;
 }
