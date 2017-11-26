@@ -3,12 +3,12 @@ function initMap() {
     
     var mapEl = document.getElementById('map');
 
-    if (!map) {
+    if (!mapEl) {
         return;
     }
 
     var latlong = { lat: 50.990263, lng: 15.232410 };
-    
+
     var map = new google.maps.Map(mapEl, {
         center: latlong,
         zoom: 5,
