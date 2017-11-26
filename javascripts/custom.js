@@ -237,8 +237,6 @@
             resize();
         };
 
-        initMap();
-
         resize();
     });
 
