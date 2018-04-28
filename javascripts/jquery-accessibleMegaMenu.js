@@ -234,11 +234,11 @@ limitations under the License.
                     if ((event.type === 'mouseout' || event.type === 'focusout') && topli.has(document.activeElement).length > 0) {
                         return;
                     }
-                    topli.find('[aria-expanded]')
-                        .attr('aria-expanded', 'false')
-                        .removeClass(settings.openClass)
-                        .filter('.' + settings.panelClass)
-                        .attr('aria-hidden', 'true');
+                    // topli.find('[aria-expanded]')
+                    //     .attr('aria-expanded', 'false')
+                    //     .removeClass(settings.openClass)
+                    //     .filter('.' + settings.panelClass)
+                    //     .attr('aria-hidden', 'true');
                     if ((event.type === 'keydown' && event.keyCode === Keyboard.ESCAPE) || event.type === 'DOMAttrModified') {
                         newfocus = topli.find(':tabbable:first');
                         setTimeout(function () {
@@ -248,25 +248,25 @@ limitations under the License.
                         }, 99);
                     }
                 } else if (topli.length === 0) {
-                    menu.find('[aria-expanded=true]')
-                        .attr('aria-expanded', 'false')
-                        .removeClass(settings.openClass)
-                        .filter('.' + settings.panelClass)
-                        .attr('aria-hidden', 'true');
+                    // menu.find('[aria-expanded=true]')
+                    //     .attr('aria-expanded', 'false')
+                    //     .removeClass(settings.openClass)
+                    //     .filter('.' + settings.panelClass)
+                    //     .attr('aria-hidden', 'true');
                 }
             } else {
                 clearTimeout(that.focusTimeoutID);
-                topli.siblings()
-                    .find('[aria-expanded]')
-                    .attr('aria-expanded', 'false')
-                    .removeClass(settings.openClass)
-                    .filter('.' + settings.panelClass)
-                    .attr('aria-hidden', 'true');
-                topli.find('[aria-expanded]')
-                    .attr('aria-expanded', 'true')
-                    .addClass(settings.openClass)
-                    .filter('.' + settings.panelClass)
-                    .attr('aria-hidden', 'false');
+                // topli.siblings()
+                //     .find('[aria-expanded]')
+                //     .attr('aria-expanded', 'false')
+                //     .removeClass(settings.openClass)
+                //     .filter('.' + settings.panelClass)
+                //     .attr('aria-hidden', 'true');
+                // topli.find('[aria-expanded]')
+                //     .attr('aria-expanded', 'true')
+                //     .addClass(settings.openClass)
+                //     .filter('.' + settings.panelClass)
+                //     .attr('aria-hidden', 'false');
                 if (event.type === 'mouseover' && target.is(':tabbable') && topli.length === 1 && panel.length === 0 && menu.has(document.activeElement).length > 0) {
                     target.focus();
                     that.justFocused = false;
@@ -730,13 +730,13 @@ limitations under the License.
                         topnavitemlink.attr({
                             "aria-haspopup": true,
                             "aria-controls": topnavitempanel.attr("id"),
-                            "aria-expanded": false
+                            "aria-expanded": true
                         });
 
                         topnavitempanel.attr({
                             "role": "group",
-                            "aria-expanded": false,
-                            "aria-hidden": true
+                            "aria-expanded": true,
+                            "aria-hidden": false
                         })
                             .addClass(settings.panelClass)
                             .not("[aria-labelledby]")
