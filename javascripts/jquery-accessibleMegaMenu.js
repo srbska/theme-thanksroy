@@ -238,7 +238,7 @@ limitations under the License.
                     //     .attr('aria-expanded', 'false')
                     //     .removeClass(settings.openClass)
                     //     .filter('.' + settings.panelClass)
-                    //     .attr('aria-hidden', 'true');
+                    //     .attr('aria-hidden', 'true'); 
                     if ((event.type === 'keydown' && event.keyCode === Keyboard.ESCAPE) || event.type === 'DOMAttrModified') {
                         newfocus = topli.find(':tabbable:first');
                         setTimeout(function () {
